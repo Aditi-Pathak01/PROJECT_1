@@ -1,0 +1,381 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body, html {
+  overflow:x hidden;
+}
+/* NavigationBar-Section */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.logo {
+  font-size: 4vmin;
+  margin-left: 100px;
+  transition: all 0.1s ease 0.1s;
+}
+
+.nav-links a {
+text-decoration: none;
+color:white;
+font-size: 3vmin;
+font-weight: bolder;
+transition: all 0.1s ease 0.1s;
+}
+
+
+
+ .nav-links ul {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.contact-us {
+  color: white;
+  background-color: #fc036b;
+  border-radius:8px;
+  padding:0 15px 0 15px;
+  transition: all 0.1s ease 0.1s;
+}
+
+
+.menu-button{
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  height: 50px;
+  display: none;
+}
+
+/* Header-section */
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(Assets/luca-bravo-VowIFDxogG4-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content {
+text-align: center;
+}
+
+header h2 {
+  color: black;
+  font-size: 5vmin;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: all 0.1s ease 0.1s;
+}
+.line {
+  height: 4px;
+  width: 180px;
+  background-color:#fc036b;
+  border-radius: 5px;
+  margin-left: 150px;
+}
+header h1 {
+  color:black;
+  font-size: 7vmin;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  transition: all 0.1s ease 0.1s;
+}
+
+ header a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 8px 15px;
+  background-color: #fc036b;
+  border-radius: 5px;
+}
+
+
+
+/* Media Query */
+@media only screen and (max-width:850px) {
+.navbar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: grey;
+  height: 520px;
+
+}
+.nav-links ul {
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+.nav-links li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.contact-us {
+  width: 140px;
+  margin-left: 0px;
+  padding-left: 10px;
+  background-color: lightgrey;
+}
+
+.menu-button{
+  opacity: 1;
+  padding-top: 10px;
+  display: inline;
+}
+ 
+.row {
+  flex-direction:column ;
+}
+
+.explore-section {
+  justify-content: start;
+  align-items: start;
+  margin: 0px;
+  padding: 0px;
+}
+.explore-content a {
+font-size: 10px;
+width: 30px;
+}
+}
+
+/* Event-Section */
+section  {
+margin-top: 30px;
+margin-bottom: 150px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3vmin;
+  font-weight: bold;
+  color: #49497e;
+  margin-bottom: 10px;
+}
+
+.title div { 
+  margin-left: 44%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+ 
+.col img {
+  width: 70%;
+  margin-bottom: 25px;
+  margin-top: 15px;
+} 
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ .col h2 {
+  color: #49497e;
+  margin-bottom: 10px;
+  margin-top: 20px;
+ }
+
+
+ .col p  {
+  color: #7c7c7c;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.75rem;
+  padding-left: 10px;
+ }
+
+.col a {
+  border: none;
+  color: whitesmoke;
+  background-color: #fc036b;
+  border-radius: 19px;
+  padding: 9px;
+  text-decoration: none;
+}
+ 
+/* Explore-Section */
+.explore-section {
+  height: 110vh;
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px 0 20px  0;
+  background-image: url(Assets/mountain.view.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-content {
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+width:50%;
+height: 30%;
+background-color: whitesmoke;
+border-radius: 20%;
+box-shadow: 0 0 10px #7c7c7c;
+}
+  
+.explore-content h1 {
+  font-size: 7vmin;
+  font-weight: bolder;
+  transition: all 0.2s ease 0.1s;
+}
+
+.explore-content p {
+  color: rgb(98, 95, 95);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.explore-content a {
+  border: none;
+  color: whitesmoke;
+  background-color: #fc036b;
+  border-radius: 19px;
+  padding: 9px;
+  text-decoration: none;
+  width: 15%;
+}
+.explore-content .line {
+  margin-left: 0;
+}
+ 
+/* Tours-Section */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.col-1{
+  width: 40%;
+}
+.col-1 h1{
+  color: #49497e;
+  font-size: 7vmin;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+  transition: all 0.12s ease-in 0.1s;
+}
+.col-1 p {
+  color: #7c7c7c;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+.image-gallery img {
+  height: 207px;
+  width: 300px;
+  object-fit: cover;
+  padding: 30px;
+}
+.col-1 a{
+  border: none;
+  color: whitesmoke;
+  background-color: #fc036b;
+  border-radius: 19px;
+  padding: 9px;
+  text-decoration: none;
+  width: 15%;
+}
+/* Footer */
+.foot-panel {
+  height: 100px;
+  width: 100%;
+  background:#484872;
+}
+
+.foot-panel p {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  color: rgb(156, 152, 152);
+}
+
+
+/* Animations */
+img {
+  transition: all 0.15s ease-in 0.1s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.lm {
+  transition: all 0.12s ease-in 0.1s;
+}
+
+.lm:hover {
+  background-color: whitesmoke;
+  color: rgb(157, 33, 54);
+}
+
+
+.nav-links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fc036b;
+}
+
+.contact-us a:hover {
+color: black;
+}
+
+.logo:hover,.header-content h2:hover,.header-content h1:hover{
+  text-decoration: underline;
+  color: white;
+}
+.explore-content h1:hover {
+  color: rgb(182, 61, 81);
+  transform:scale(1.2); 
+}
+.col-1 h1:hover{
+  text-decoration: underline;
+  color: #6262b3;
+
+}
