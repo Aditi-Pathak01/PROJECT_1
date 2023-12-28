@@ -18,6 +18,7 @@ body, html {
   justify-content: space-between;
   padding-top: 20px;
 }
+
 .logo {
   font-size: 4vmin;
   margin-left: 100px;
@@ -31,8 +32,6 @@ font-size: 3vmin;
 font-weight: bolder;
 transition: all 0.1s ease 0.1s;
 }
-
-
 
  .nav-links ul {
   display: flex;
@@ -54,7 +53,7 @@ transition: all 0.1s ease 0.1s;
 }
 
 
-.menu-button{
+.menu-button {
   position: absolute;
   top: 60px;
   right: 30px;
@@ -73,6 +72,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .header-content {
 text-align: center;
 }
@@ -84,6 +84,7 @@ header h2 {
   margin-bottom: 10px;
   transition: all 0.1s ease 0.1s;
 }
+
 .line {
   height: 4px;
   width: 180px;
@@ -91,6 +92,7 @@ header h2 {
   border-radius: 5px;
   margin-left: 150px;
 }
+
 header h1 {
   color:black;
   font-size: 7vmin;
@@ -111,50 +113,52 @@ header h1 {
 
 /* Media Query */
 @media only screen and (max-width:850px) {
-.navbar {
+ .navbar {
   position: absolute;
   top: 30px;
   left: 30px;
   background: grey;
   height: 520px;
-
 }
-.nav-links ul {
+
+ .nav-links ul {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
   justify-content: center;
 }
-.nav-links li {
+
+ .nav-links li {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-.contact-us {
+ .contact-us {
   width: 140px;
   margin-left: 0px;
   padding-left: 10px;
   background-color: lightgrey;
 }
 
-.menu-button{
+ .menu-button{
   opacity: 1;
   padding-top: 10px;
   display: inline;
 }
  
-.row {
+ .row {
   flex-direction:column ;
 }
 
-.explore-section {
+ .explore-section {
   justify-content: start;
   align-items: start;
   margin: 0px;
   padding: 0px;
 }
-.explore-content a {
+
+ .explore-content a {
 font-size: 10px;
 width: 30px;
 }
@@ -197,13 +201,11 @@ margin-bottom: 150px;
   align-items: center;
 }
 
-
  .col h2 {
   color: #49497e;
   margin-bottom: 10px;
   margin-top: 20px;
  }
-
 
  .col p  {
   color: #7c7c7c;
@@ -271,6 +273,7 @@ box-shadow: 0 0 10px #7c7c7c;
   text-decoration: none;
   width: 15%;
 }
+
 .explore-content .line {
   margin-left: 0;
 }
@@ -282,9 +285,11 @@ box-shadow: 0 0 10px #7c7c7c;
   align-items: center;
   margin-top: 100px;
 }
+
 .col-1{
   width: 40%;
 }
+
 .col-1 h1{
   color: #49497e;
   font-size: 7vmin;
@@ -292,6 +297,7 @@ box-shadow: 0 0 10px #7c7c7c;
   margin-bottom: 0.5rem;
   transition: all 0.12s ease-in 0.1s;
 }
+
 .col-1 p {
   color: #7c7c7c;
   font-size: 1.2rem;
@@ -312,6 +318,7 @@ box-shadow: 0 0 10px #7c7c7c;
   object-fit: cover;
   padding: 30px;
 }
+
 .col-1 a{
   border: none;
   color: whitesmoke;
@@ -321,6 +328,7 @@ box-shadow: 0 0 10px #7c7c7c;
   text-decoration: none;
   width: 15%;
 }
+
 /* Footer */
 .foot-panel {
   height: 100px;
@@ -370,10 +378,12 @@ color: black;
   text-decoration: underline;
   color: white;
 }
+
 .explore-content h1:hover {
   color: rgb(182, 61, 81);
   transform:scale(1.2); 
 }
+
 .col-1 h1:hover{
   text-decoration: underline;
   color: #6262b3;
